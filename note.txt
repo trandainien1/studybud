@@ -1,0 +1,45 @@
+Create django project
+Create App, add app to settings.py (to let the project know the existance of this new app)
+Create function represent a page 
+Create url related to that page (function)
+Create html templates 
+let Project know that we have templates folder
+template inheritance
+what is tag??? (django template engine)
+create folder templates for app (careful the structure of folder and name convention)
+dynamic url (go to any room)
+database
+- create model (table)
+- makemigrations/ migrate (cmd)
+- create data for table in admin panel
+- relationship 
+- user model 
+    # Note: create -> makemigrations -> migrate -> register in admin
+
+# CRUD
+- edit the data in the table using ModelForm
+- delete
+
+# style
+# filter data
+- Searching and query
+
+Authentication
+- message
+- login/ logout
+- restrict user
+- registration
+
+Chat room messages
+
+-> learn relationship in django
+
+include style.css file for the main template html
+
+Theme designer
+how to install a theme of front end developer
+
+
+
+
+

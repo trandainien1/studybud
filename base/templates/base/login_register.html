@@ -1,0 +1,9 @@
+{% extends 'main.html' %} 
+{% load static %} 
+{% block content %} 
+    {% if page == 'login' %} 
+        {% include 'base/login.html' %} 
+    {% else %} 
+        {% include 'base/signup.html' %} 
+    {% endif %} 
+{% endblock content%}
