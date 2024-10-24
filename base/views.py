@@ -47,7 +47,7 @@ def registerPage(request):
 
         if form.is_valid():
             user_info = form.save()
-            messages.info(request, 'Thanks you for registering, you are now logged in!!!')            
+            # messages.info(request, 'Thanks you for registering, you are now logged in!!!')            
             user = authenticate(username=form.cleaned_data['username'], password=form.cleaned_data['password1'])
             if user is not None:
                 login(request, user)
@@ -214,4 +214,10 @@ def deleteMessageInHome(request, pk):
         return redirect('home')
     return render(request, 'base/delete.html', {'obj': message})
 
-
+def topicsPage(request):
+    q = request.GET.get('q')
+    if q != None:
+        topics = Topic.objects.filter(Q(name__icontains=q))
+    else:
+        topics = Topic.objects.all()
+    return render(request, 'base/topics.html', {'topics': topics})
