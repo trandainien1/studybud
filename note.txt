@@ -39,6 +39,11 @@ include style.css file for the main template html
 Theme designer
 how to install a theme of front end developer
 
+django rest framework: give another user the data from our server by using API
+
+django cors header: allow access data from difference sources
+
+UserModel
 
 
 
